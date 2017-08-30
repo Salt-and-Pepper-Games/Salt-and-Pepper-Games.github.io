@@ -270,6 +270,10 @@ nav {
 
   .read-more {
     font-size: 15px;
+    transition: opacity .125s;
+  }
+  .read-more:hover {
+    opacity: .75;
   }
 }
 
