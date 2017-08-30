@@ -9,7 +9,7 @@ name: Salt and Pepper Games
 description: Development blog
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://cdn0.iconfinder.com/data/icons/thin-food-cooking/24/thin-0877_salt_pepper_spices-512.png
 
 #
 # Flags below are optional
@@ -18,15 +18,15 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: saltpeppergames@gmail.com
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: Salt-and-Pepper-Games
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: s_and_p_games
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
