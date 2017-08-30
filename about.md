@@ -14,4 +14,4 @@ We are currently hiring interns. Please make any inquiries to the address below.
 
 ### Contact
 
-[saltpeppergame@gmail.com](mailto:saltpeppergames@gmail.com)
+[saltpeppergames@gmail.com](mailto:saltpeppergames@gmail.com)
