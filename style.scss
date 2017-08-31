@@ -33,6 +33,24 @@ body {
   font-style: italic;
 }
 
+.PageNavigation {
+  font-size: 14px;
+  width: auto;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.PageNavigation a {
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  float: right;
+}
+.PageNavigation .prev {
+  
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
