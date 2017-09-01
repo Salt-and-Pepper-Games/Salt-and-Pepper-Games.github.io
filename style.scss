@@ -41,10 +41,14 @@ body {
 }
 
 .PageNavigation {
-  font-size: 14px;
+  font-size: 1em;
   width: auto;
   overflow: hidden;
   margin-top: 50px;
+
+  @include mobile {
+    font-size: .75em;
+  }
 }
 
 .PageNavigation a, .nav-arrow {
@@ -78,23 +82,40 @@ body {
     } 
   }
 }
+#search-results {
+  li {
+    h3 {
+      transition: color .125s, opacity .125s;
+    }
+  }
+  li {
+    h3:hover {
+      color: $blue;
+      opacity: .75;
+    }
+  }
+}
 
 .search-box {
-    font-family: "Arial", "FontAwesome" !important;
+    font-family: "Arial", "FontAwesome";
     float: right;
     margin-top: 15px;
     font-size: 15px;
     border-radius: 5px;
     padding: 5px 20px;
-    opacity: .50;
     transition: opacity .125s;
     box-shadow: none;
+
+    @include mobile {
+      float: none;
+    }
 }
+
 #search-box::-webkit-input-placeholder {
-  opacity: .5;
+  opacity: 1;
 }
 #search-box:focus::-webkit-input-placeholder {
-  opacity: .25;
+  opacity: 0;
 }
 #search-box:focus {
     outline: none;
