@@ -82,6 +82,9 @@ body {
     } 
   }
 }
+.posted-by {
+  font-style: italic;
+}
 #search-results {
   li {
     h3 {
@@ -126,6 +129,7 @@ body {
 
 #search-box::-webkit-input-placeholder {
   opacity: 1;
+  transition: opacity .075s;
 }
 #search-box:focus::-webkit-input-placeholder {
   opacity: .25;
