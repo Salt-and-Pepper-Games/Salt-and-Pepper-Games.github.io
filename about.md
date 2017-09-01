@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Salt and Pepper Games is Simon Ever-Hale, Peter Stefek, Jonah Bregstone, and Samuel Grund.
-After meeting at Oberlin College, their connection was instant.
-That bond was solidified even further when, in the Spring of 2016, they developed Prism, a groundbreaking puzzle game.
+Salt and Pepper Games was born in Spring of 2016. Shortly after, they released the demo of a groundbreaking puzzle game, Prism.
 Sadly, they didn't have the time to finish its development. Until now. 
 ### More Information
 

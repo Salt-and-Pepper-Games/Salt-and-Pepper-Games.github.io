@@ -79,6 +79,26 @@ body {
   }
 }
 
+#search-box {
+    float: right;
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    opacity: .50;
+    transition: opacity .125s;
+    box-shadow: none;
+}
+#search-box::-webkit-input-placeholder {
+  opacity: .5;
+}
+#search-box:focus::-webkit-input-placeholder {
+  opacity: .25;
+}
+#search-box:focus {
+    outline: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;

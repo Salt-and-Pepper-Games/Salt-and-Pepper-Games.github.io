@@ -1,11 +1,6 @@
 ---
 layout: search
 ---
-<form action="./index.html" method="get">
-  <label for="search-box">Search</label>
-  <input type="text" id="search-box" name="query">
-  <input type="submit" value="search">
-</form>
 
 <ul id="search-results"></ul>
 
@@ -25,3 +20,12 @@ layout: search
 </script>
 <script src="../js/lunr.js"></script>
 <script src="../js/search.js"></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    var form = document.getElementById("other-search-form");
+
+    document.getElementById("other-search-button").addEventListener("click", function () {
+      form.submit();
+    });
+  });
+</script>
