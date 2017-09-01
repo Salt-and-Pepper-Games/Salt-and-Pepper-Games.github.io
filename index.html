@@ -9,7 +9,7 @@ layout: default
       <div class="date-preview"> {{ post.date | date: '%B %e, %Y' }} </div>
 
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | truncatewords: 100 }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read more...</a>

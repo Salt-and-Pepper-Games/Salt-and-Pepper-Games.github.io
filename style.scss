@@ -95,6 +95,19 @@ body {
     }
   }
 }
+.search-item {
+  display: flex;
+  flex-direction: column;
+  list-style-type: cjk-ideographic;
+}
+.search-link {
+  display: inline-block;
+  width: fit-content;
+}
+.search-divider {
+  opacity: .25;
+  margin-top: 1em;
+}
 
 .search-box {
     font-family: "Arial", "FontAwesome";

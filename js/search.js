@@ -7,8 +7,9 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-        appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+        appendString += '<li class="search-item"><a class="search-link" href="' + item.url + '"><h3>' + item.title + '</h3></a>';
+        appendString += '<span>' + item.date + '</span>';
+        appendString += '<p>' + item.content.substring(0, 150) + '...</p></li><hr class="search-divider"/>';
       }
 
       searchResults.innerHTML = appendString;
@@ -43,6 +44,7 @@
       this.field('author');
       this.field('category');
       this.field('content');
+      this.field('date');
 
       for (var key in window.store) { // Add the data to lunr
         this.add({
@@ -50,7 +52,8 @@
           'title': window.store[key].title,
           'author': window.store[key].author,
           'category': window.store[key].category,
-          'content': window.store[key].content
+          'content': window.store[key].content,
+          'date': window.store[key].date
         });
       }
     });
