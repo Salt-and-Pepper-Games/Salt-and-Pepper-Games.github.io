@@ -128,7 +128,7 @@ body {
   opacity: 1;
 }
 #search-box:focus::-webkit-input-placeholder {
-  opacity: 0;
+  opacity: .25;
 }
 #search-box:focus {
     outline: none;
