@@ -13,14 +13,21 @@
 /* BASE RULES */
 /**************/
 
+$fontfamily: 'Work Sans', sans-serif;
+
 html {
   font-size: 100%;
+  font-family: $fontfamily;
 }
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4;
   color: $darkGray;
+}
+
+.search {
+  font-family: $fontfamily;
 }
 
 .container {
@@ -37,24 +44,45 @@ body {
   font-size: 14px;
   width: auto;
   overflow: hidden;
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
-.PageNavigation a {
-  margin: 1em 0;
+.PageNavigation a, .nav-arrow {
+  color: black;
+  line-height: normal;
+  transition: color .125s, opacity .125s;
 }
 
 .PageNavigation .next {
+  display: flex;
+  align-items: flex-end;
   float: right;
+  .nav-arrow {
+    margin-left: 1em;
+  }
 }
 .PageNavigation .prev {
-  
+  display: flex;
+  align-items: flex-end;
+  float: left;
+  .nav-arrow {
+    margin-right: 1em;
+  }
+}
+.PageNavigation {
+  .next:hover, .prev:hover {
+    .nav-arrow, a {
+      opacity: .75;
+      color: $blue;
+      cursor: pointer;
+    } 
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
+  font-family: $fontfamily;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -66,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-weight: 400;
   font-size: 30px;
   a {
     color: inherit;
@@ -73,28 +102,34 @@ h1 {
 }
 
 h2 {
+  font-weight: 400;
   font-size: 24px;
 }
 
 h3 {
+  font-weight: 400;
   font-size: 20px;
 }
 
 h4 {
+  font-weight: 400;
   font-size: 18px;
   color: $gray;
 }
 
 p {
   margin: 15px 0;
+  line-height: 25px;
 }
 
 a {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
+  transition: color .125s, opacity .125s;
   &:hover, &:active {
     color: $blue;
+    opacity: .75;
   }
 }
 
@@ -215,7 +250,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $fontfamily;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -234,7 +269,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $fontfamily;
   font-size: 18px;
 
   @include mobile {

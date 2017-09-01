@@ -1,7 +1,7 @@
 ---
 layout: search
 ---
-<form action="{{ site.baseurl }}/search.html" method="get">
+<form action="./index.html" method="get">
   <label for="search-box">Search</label>
   <input type="text" id="search-box" name="query">
   <input type="submit" value="search">
@@ -23,5 +23,5 @@ layout: search
     {% endfor %}
   };
 </script>
-<script src="https://unpkg.com/lunr/lunr.js"></script>
-<script src="{{ site.baseurl }}/js/search.js"></script>
+<script src="../js/lunr.js"></script>
+<script src="../js/search.js"></script>
