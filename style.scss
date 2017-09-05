@@ -26,6 +26,59 @@ body {
   color: $darkGray;
 }
 
+.splash {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1em;
+  @include mobile {
+    font-weight: 400;
+  }
+  .S {
+    color: #FF6978;
+  }
+  .P {
+    color: #4CEDDE;
+  }
+  .L {
+    color: #94EA54;
+  }
+  .A {
+    color: #C85ED8;
+  }
+  .SS {
+    color: #3885F9;
+  }
+  .H {
+    color: #F4EE36;
+  }
+}
+.splash:hover {
+  cursor: pointer;
+  .S {
+    color: #F4EE36;
+  }
+  .P {
+    color: #3885F9;
+  }
+  .L {
+    color: #FF6978;
+  }
+  .A {
+    color: #4CEDDE;
+  }
+  .SS {
+    color: #94EA54;
+  }
+  .H {
+    color: #C85ED8;
+  }
+}
+.letter {
+    padding-left: 1px;
+    padding-right: 1px;
+    transition: all .125s;
+}
+
 .search {
   font-family: $fontfamily;
 }
@@ -101,7 +154,6 @@ body {
 .search-item {
   display: flex;
   flex-direction: column;
-  list-style-type: cjk-ideographic;
 }
 .search-link {
   display: inline-block;
