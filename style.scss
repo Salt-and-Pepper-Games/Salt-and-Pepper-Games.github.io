@@ -25,6 +25,18 @@ body {
   font: 18px/1.4;
   color: $darkGray;
 }
+.image {
+  width: 100%;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.image-caption {
+  margin-top: 1em;
+}
+.actual-image {
+  border-radius: .5em;
+}
 
 .splash {
   display: inline-block;
